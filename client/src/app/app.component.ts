@@ -6,7 +6,7 @@ import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NgFor],
+  imports: [RouterOutlet, NgFor], // this NgFor is used as a Structural Directive in the app.html file, to display the api fetch
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
