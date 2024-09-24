@@ -10,6 +10,7 @@ public class AppUser
     public required string UserName { get; set; }  /* to set a nullable variable by default.
                                                  We can also use ? after the type or use the 'required' keyword before the type
                                                  but then we would have to assign a value to the UserName variable everytime we create an object.*/
-    
+    public required byte[] PasswordHash { get; set; } // to create a Password Hash array
+    public required byte[] PasswordSalt { get; set; } // to create a Password Salt array
 
 }
